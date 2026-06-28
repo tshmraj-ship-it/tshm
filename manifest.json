@@ -1,0 +1,84 @@
+{
+  "name": "তা'লিমুস সুন্নাহ্ হাফিজিয়া মাদ্রাসা",
+  "short_name": "তা'লিমুস সুন্নাহ্",
+  "description": "রাজশাহীর বাসন্তাপুরে মানসম্পন্ন ইসলামী শিক্ষার প্রতিষ্ঠান।",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#1a2744",
+  "theme_color": "#1a2744",
+  "orientation": "portrait-primary",
+  "lang": "bn",
+  "scope": "/",
+  "categories": ["education", "religion"],
+  "icons": [
+    {
+      "src": "assets/images/icon-72.png",
+      "sizes": "72x72",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "assets/images/icon-96.png",
+      "sizes": "96x96",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "assets/images/icon-128.png",
+      "sizes": "128x128",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "assets/images/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "assets/images/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "assets/images/screenshot-mobile.png",
+      "sizes": "390x844",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "হোম পেজ — মোবাইল"
+    },
+    {
+      "src": "assets/images/screenshot-desktop.png",
+      "sizes": "1280x800",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "হোম পেজ — ডেস্কটপ"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "নোটিশ বোর্ড",
+      "short_name": "নোটিশ",
+      "description": "সর্বশেষ বিজ্ঞপ্তি দেখুন",
+      "url": "/notice.html",
+      "icons": [{ "src": "assets/images/icon-96.png", "sizes": "96x96" }]
+    },
+    {
+      "name": "ভর্তি তথ্য",
+      "short_name": "ভর্তি",
+      "description": "ভর্তির তথ্য ও প্রক্রিয়া",
+      "url": "/admission.html",
+      "icons": [{ "src": "assets/images/icon-96.png", "sizes": "96x96" }]
+    },
+    {
+      "name": "ফলাফল",
+      "short_name": "ফলাফল",
+      "description": "পরীক্ষার ফলাফল দেখুন",
+      "url": "/results.html",
+      "icons": [{ "src": "assets/images/icon-96.png", "sizes": "96x96" }]
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+# robots.txt — Ta'limus Sunnah Hafizia Madrasa
+# https://YOUR_SITE_URL/
+
+User-agent: *
+Allow: /
+
+# Disallow utility files
+Disallow: /sw.js
+Disallow: /manifest.json
+
+# Sitemap location
+Sitemap: https://YOUR_SITE_URL/sitemap.xml
+
+# Crawl-delay (optional, be gentle on small servers)
+Crawl-delay: 5
