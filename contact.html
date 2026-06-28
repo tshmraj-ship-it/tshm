@@ -71,7 +71,7 @@
 <section class="section" aria-labelledby="contact-content-label">
   <div class="container">
     <h2 id="contact-content-label" class="sr-only">যোগাযোগের তথ্য ও ফর্ম</h2>
-    <div style="display:grid;grid-template-columns:1fr 1.6fr;gap:3rem;align-items:start;">
+    <div class="contact-grid" style="align-items:start;">
 
       <!-- Contact Info Panel -->
       <div class="reveal">
@@ -145,7 +145,7 @@
             <span aria-hidden="true">✉️</span> বার্তা পাঠান
           </h2>
           <form id="contact-form" novalidate aria-label="যোগাযোগ ফর্ম">
-            <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem;">
+            <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:1rem;">
               <div class="form-group">
                 <label class="form-label" for="contact-name" data-i18n="contact_name">আপনার নাম <span aria-label="প্রয়োজনীয়" style="color:var(--clr-red);">*</span></label>
                 <input

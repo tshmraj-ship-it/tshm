@@ -1426,6 +1426,192 @@ input, textarea, select { font-family: inherit; }
   .hero h1 { font-size: 1.75rem; }
 }
 
+/* ---------- Page-specific responsive grids ---------- */
+
+/* Hero: two-col desktop, single-col mobile */
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1fr 340px;
+  gap: 3rem;
+  align-items: center;
+}
+
+/* About preview: two-col desktop */
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+/* About image cluster grid */
+.about-img-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+/* Admission banner inner */
+.banner-grid {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 2rem;
+  align-items: center;
+}
+
+/* Prayer grid — 5 col desktop, 3 col mobile */
+.prayer-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: .5rem;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  /* Stack hero vertically */
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    text-align: center;
+  }
+  .hero-grid .hero-eyebrow {
+    justify-content: center;
+  }
+  .hero-grid .hero-cta {
+    justify-content: center;
+  }
+  .hero-grid .hero-arabic {
+    text-align: center;
+  }
+
+  /* Prayer card: full width, 3+2 col */
+  .prayer-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .prayer-times-widget {
+    max-width: 100%;
+  }
+
+  /* About preview: stack */
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  /* Hide image cluster on mobile to save space */
+  .about-img-grid {
+    display: none;
+  }
+
+  /* Admission banner: stack */
+  .banner-grid {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+  .banner-grid > div:last-child {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  /* Stats: 3 col then 2 */
+  .stats-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .prayer-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  /* Tighten hero padding on very small screens */
+  .hero-content {
+    padding: 2.5rem 0;
+  }
+}
+
+/* Featured teacher card */
+.featured-teacher-card {
+  display: flex;
+  gap: 0;
+}
+.featured-teacher-img {
+  width: 220px;
+  flex-shrink: 0;
+  background: linear-gradient(135deg, var(--clr-navy), var(--clr-teal));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 260px;
+}
+
+@media (max-width: 600px) {
+  .featured-teacher-card {
+    flex-direction: column;
+  }
+  .featured-teacher-img {
+    width: 100%;
+    min-height: 200px;
+  }
+}
+
+/* Contact page two-col layout */
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.6fr;
+  gap: 3rem;
+}
+
+@media (max-width: 768px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  /* Show info panel first on mobile */
+  .contact-grid > div:first-child {
+    order: 2;
+  }
+  .contact-grid > div:last-child {
+    order: 1;
+  }
+}
+
+/* Admission steps connector */
+@media (min-width: 769px) {
+  .step-connector { display: block !important; }
+}
+
+/* Fee table — horizontal scroll on small screens */
+.fee-table-wrap {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  border-radius: var(--r-lg);
+  border: 1px solid var(--clr-border);
+}
+.fee-table-wrap table {
+  min-width: 540px;
+}
+
+/* Hero eyebrow text — prevent overflow on tiny screens */
+.hero-eyebrow {
+  max-width: 100%;
+  white-space: normal;
+  word-break: break-word;
+}
+
+/* Donation payment blocks — ensure single col on small mobile */
+@media (max-width: 480px) {
+  .payment-block { padding: 1.25rem; }
+  .admission-banner { padding: 1.75rem 1.25rem; }
+  .page-hero { padding: 2.5rem 0 2rem; }
+  .footer-grid { gap: 1.25rem; }
+}
+
+/* Prevent any element from overflowing viewport horizontally */
+.container, section, article, aside { max-width: 100%; overflow-x: hidden; }
+img { max-width: 100%; height: auto; }
+
 /* ---------- Print ---------- */
 @media print {
   #site-header, #float-ctrl, #wa-btn, #site-footer, .btn { display: none; }
